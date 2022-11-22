@@ -12,8 +12,8 @@ for k, v in resp.items():
         sec = int(v1.get('running_time_in_nanos'))
         if sec > a:
             print("Kill task " +  es.tasks.cancel(task_id=k1)) #kill task run over 5min
-    else:
-        print("Live")
-        print('-------------------------------------------------')
+        else:
+            print("Live")
+            print('-------------------------------------------------')
 
 
